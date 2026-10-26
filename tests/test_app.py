@@ -7,6 +7,7 @@ client = TestClient(app)
 
 def test_health_without_api_key(monkeypatch) -> None:
     monkeypatch.delenv("CHAT_API_KEY", raising=False)
+    monkeypatch.delenv("CHAT_MODEL", raising=False)
     response = client.get("/health")
 
     assert response.status_code == 200

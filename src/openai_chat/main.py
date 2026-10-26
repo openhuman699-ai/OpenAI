@@ -31,7 +31,7 @@ class ChatResponse(BaseModel):
 
 
 def get_model() -> str:
-    return os.getenv("OPENAI_MODEL", DEFAULT_MODEL)
+    return os.getenv("CHAT_MODEL", DEFAULT_MODEL)
 
 
 def is_configured() -> bool:
