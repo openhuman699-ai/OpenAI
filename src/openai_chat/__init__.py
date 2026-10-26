@@ -1,0 +1,1 @@
+"""OpenAI Chat starter application."""
